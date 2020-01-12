@@ -1,8 +1,4 @@
-package es.uma.sedmp;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+package es.uma.sedmp.agenda;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,13 +6,19 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import es.uma.sedmp.models.Agenda;
+import es.uma.sedmp.DialogExceptionHandler;
+import es.uma.sedmp.R;
+import es.uma.sedmp.sensors.SensorsActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class AgendaActivity extends AppCompatActivity {
     private EditText nombre;
 
     private RecyclerView recyclerView;
@@ -29,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_agenda);
         nombre = findViewById(R.id.main_nombre_input);
-        recyclerView = findViewById(R.id.my_recycler_view);
+        recyclerView = findViewById(R.id.agenda_recycler_view);
 
         results = new ArrayList<>();
 
@@ -66,8 +68,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void loadAddEntryView(View view) {
         try {
-            Intent myIntent = new Intent(MainActivity.this, AddEntryActivity.class);
-            MainActivity.this.startActivity(myIntent);
+            Intent myIntent = new Intent(AgendaActivity.this, AddEntryActivity.class);
+            AgendaActivity.this.startActivity(myIntent);
+        } catch (RuntimeException e) {
+            DialogExceptionHandler.uncaughtException(e, this);
+        }
+    }
+
+    public void loadSensorsView(View view) {
+        try {
+            Intent myIntent = new Intent(AgendaActivity.this, SensorsActivity.class);
+            AgendaActivity.this.startActivity(myIntent);
         } catch (RuntimeException e) {
             DialogExceptionHandler.uncaughtException(e, this);
         }

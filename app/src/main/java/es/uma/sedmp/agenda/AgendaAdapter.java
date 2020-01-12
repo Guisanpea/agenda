@@ -1,4 +1,4 @@
-package es.uma.sedmp;
+package es.uma.sedmp.agenda;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 import java.util.Map;
 
-import static androidx.core.content.ContextCompat.startActivity;
+import es.uma.sedmp.R;
 
 class AgendaAdapter extends RecyclerView.Adapter<AgendaAdapter.ResultHolder> {
     private List<Map.Entry<String, String>> results;
@@ -57,7 +57,7 @@ class AgendaAdapter extends RecyclerView.Adapter<AgendaAdapter.ResultHolder> {
     @Override
     public ResultHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         RelativeLayout v = (RelativeLayout) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.list_item, parent, false);
+                .inflate(R.layout.contact_item, parent, false);
 
         return new ResultHolder(v);
     }

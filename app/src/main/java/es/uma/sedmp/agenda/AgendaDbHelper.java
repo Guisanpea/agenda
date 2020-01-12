@@ -1,4 +1,4 @@
-package es.uma.sedmp.models;
+package es.uma.sedmp.agenda;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

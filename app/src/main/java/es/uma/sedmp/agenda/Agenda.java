@@ -1,4 +1,4 @@
-package es.uma.sedmp.models;
+package es.uma.sedmp.agenda;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -9,11 +9,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 import es.uma.sedmp.AgendaApplication;
-import es.uma.sedmp.models.AgendaDbHelper.AgendaContract.AgendaEntry;
+import es.uma.sedmp.agenda.AgendaDbHelper.AgendaContract.AgendaEntry;
 
-import static es.uma.sedmp.models.AgendaDbHelper.AgendaContract.AgendaEntry.COLUMN_NAME_PERSONA;
-import static es.uma.sedmp.models.AgendaDbHelper.AgendaContract.AgendaEntry.COLUMN_NAME_TELEFONO;
-import static es.uma.sedmp.models.AgendaDbHelper.AgendaContract.AgendaEntry.TABLE_NAME;
+import static es.uma.sedmp.agenda.AgendaDbHelper.AgendaContract.AgendaEntry.COLUMN_NAME_PERSONA;
+import static es.uma.sedmp.agenda.AgendaDbHelper.AgendaContract.AgendaEntry.COLUMN_NAME_TELEFONO;
+import static es.uma.sedmp.agenda.AgendaDbHelper.AgendaContract.AgendaEntry.TABLE_NAME;
 
 public enum Agenda {
     INSTANCE;

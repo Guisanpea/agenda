@@ -1,4 +1,4 @@
-package es.uma.sedmp;
+package es.uma.sedmp.agenda;
 
 import android.os.Bundle;
 
@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import es.uma.sedmp.models.Agenda;
+import es.uma.sedmp.R;
+import es.uma.sedmp.DialogExceptionHandler;
 
 /*
 Se utilizará el patrón de diseño Modelo-Vista-Controlador, donde las vistas se encuentran

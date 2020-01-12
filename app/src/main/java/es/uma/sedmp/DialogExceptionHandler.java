@@ -4,8 +4,8 @@ import android.app.Activity;
 
 import androidx.appcompat.app.AlertDialog;
 
-class DialogExceptionHandler {
-    static void uncaughtException(Throwable e, Activity context) {
+public class DialogExceptionHandler {
+    public static void uncaughtException(Throwable e, Activity context) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
 
         builder.setTitle(R.string.error_title)
@@ -14,7 +14,7 @@ class DialogExceptionHandler {
         builder.create().show();
     }
 
-    static void showDialog(String mesage, Activity context) {
+    public static void showDialog(String mesage, Activity context) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
 
         builder.setTitle(R.string.error_title)

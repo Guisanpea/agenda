@@ -15,4 +15,6 @@
     <string name="actualizado">The contact has been updated</string>
     <string name="error_title">An error has occurred</string>
     <string name="add_no_vacio">Name and phone fields cannot be empty</string>
+    <string name="sensorsButton">Sensors</string>
+    <string name="vendor">Vendor: %1$s</string>
 </resources>
