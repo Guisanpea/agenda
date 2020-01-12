@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="nameTextInput">Introduce Name</string>
+    <string name="buscarButton">Search</string>
+    <string name="añadirButton">Add</string>
+    <string name="telefono">Phone</string>
+    <string name="nombre">Name</string>
+    <string name="title_activity_add_entry">Add Entry</string>
+    <string name="añadir">Add</string>
+    <string name="volver">Back</string>
+    <string name="no_encontrado">Not found</string>
+    <string name="found">Results have been found</string>
+    <string name="no_result">No result has been found</string>
+    <string name="salvado">Saved contact</string>
+    <string name="actualizado">The contact has been updated</string>
+    <string name="error_title">An error has occurred</string>
+    <string name="add_no_vacio">Name and phone fields cannot be empty</string>
+</resources>

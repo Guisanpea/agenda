@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="nameTextInput">Introduce Nombre</string>
+    <string name="buscarButton">Buscar</string>
+    <string name="añadirButton">Añadir</string>
+    <string name="telefono">Teléfono</string>
+    <string name="nombre">Nombre</string>
+    <string name="title_activity_add_entry">Añadir Entrada</string>
+    <string name="añadir">Añadir</string>
+    <string name="volver">Volver</string>
+    <string name="no_encontrado">No encontrado</string>
+    <string name="found">Se han encontrado resultados</string>
+    <string name="no_result">No se ha encontrado ningún resultado</string>
+    <string name="salvado">Contacto salvado</string>
+    <string name="actualizado">El contacto ha sido actualizado</string>
+    <string name="error_title">Ha ocurrido un error</string>
+    <string name="add_no_vacio">Los campos nombre y telefono no pueden ser vacios</string>
+</resources>
